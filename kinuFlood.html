@@ -24,7 +24,7 @@
 <body class="childrenBody">
     <blockquote class="layui-elem-quote">
         <a class="layui-btn layui-btn-radius openJapan_btn" onClick="javascript :history.back(-1);" target="_blank">前のページに戻る</a>
-        <p style="text-align:right">推薦勉強時間：<em class="layui-word-aux">15分</em></p>
+        <p style="text-align:right">およその学習時間：<em class="layui-word-aux">15分</em></p>
     </blockquote>
     <!-- 洪水介绍的标题 -->
     <div id="title">
@@ -32,46 +32,46 @@
             <legend><h3>洪水について</h3></legend>
         </fieldset>
     </div>
-    <div class="content"><p>洪水とは、集中豪雨などが原因で河川が増水氾濫し、陸地が水びたしになることによって被害を及ぼすことである。</div>
+    <div class="content"><p>空から降った雨は、地中に浸透したり、地面の高いところから低いところに流れ、河川となります。河川は土地を浸食して、土砂を下流に運搬・堆積させます。河川に流入する水が一定の量を超えると河川は氾濫し、普段水につからないような土地が浸水します。この現象を洪水とよび、洪水を繰り返すことによって、平野が形成されます。多くの人々が生活している土地が、洪水により被害をうけることを水害とよびます。</div>
     <!-- 面板的背景颜色和手风琴折叠的设置，洪水发生的原因 -->
     <div style="padding:20px; background-color: #F2F2F2; width: 90%; margin: 0 auto;">
       <div class="layui-row layui-col-space15">
         <div class="layui-col-md12">
           <div class="layui-card">
-            <div class="layui-card-header">発生原因</div>
+            <div class="layui-card-header">川の氾濫の要因</div>
             <div class="layui-card-body">
             <div class="layui-collapse" lay-accordion="">
               <div class="layui-colla-item">
                 <h2 class="layui-colla-title">降雨(集中豪雨・台風などによる)</h2>
               <div class="layui-colla-content">
-                <p>豪雨による洪水は、降水が地中に浸透せず、河川にあふれ出るから発生するのではない。多量の降水があった時など、地中に浸透しない水が地表で水流を作ることがある。<button onclick="document.getElementById('id01').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
-              </div>
-              </div>
-              <div class="layui-colla-item">
-                <h2 class="layui-colla-title">高潮（台風などによる）</h2>
-              <div class="layui-colla-content">
-                <p>高潮や、海から河口へ吹く風により、下流部の河流が妨げられたり、激しい場合は海水が河川へ逆流することがある。このような場合、河川への流入なしでも洪水が起こりうる。ただし実際はこのような現象は台風の豪雨に伴われることが多い。<button onclick="document.getElementById('id02').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
+                <p>豪雨によって流域の降雨量が短時間で増加すると、地中に水が浸透できなくなったり、川に流れ込む水が多量となり、洪水の要因となります。<button onclick="document.getElementById('id01').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
               </div>
               </div>
               <div class="layui-colla-item">
                 <h2 class="layui-colla-title">融雪</h2>
               <div class="layui-colla-content">
-                <p>積雪地では、冬季の異常な気温上昇、暖かい強風、降雨や、季節変動による春季の気温上昇により融雪を要因とする洪水が発生する。洪水の規模として夏季の降雨よりも春季の融雪を要因とする方が大規模となる場合が多い。<button onclick="document.getElementById('id03').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
+                <p>積雪地では、冬季や春季の気温上昇などに伴う、融雪により洪水が発生する。地域によっては、夏季の降雨よりも春季の融雪の方が、河川の流量が大きい。<button onclick="document.getElementById('id03').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
               </div>
               </div>
-              </div>        
+              <div class="layui-colla-item">
+                <h2 class="layui-colla-title">高潮（台風などによる）による浸水</h2>
+              <div class="layui-colla-content">
+                <p>高潮は、海から河口へ吹く風により、海水が河川や海岸の低地へ逆流する現象をさす。<button onclick="document.getElementById('id02').style.display='block'" class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon">&#xe64a;</i></button></p>
+              </div>
+              </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div> 
+    </div>
     <!-- 洪水发生原因的相关图片，id01是降雨，id02是高潮，id03是融雪 -->
     <div id="id01" class="modal">
       <div class="modal-content">
         <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
           <div class="imgstar">
             <img id="myImg" src="../../img/inner/hshui.jpg" alt="flood" style="width:90%; height:90%;">
-          </div> 
+          </div>
       </div>
     </div>
     <div id="id02" class="modal">
@@ -79,7 +79,7 @@
         <span onclick="document.getElementById('id02').style.display='none'" class="close">&times;</span>
           <div class="imgstar">
             <img id="myImg" src="../../img/inner/gao.jpg" alt="flood" style="width:90%; height:90%;">
-          </div> 
+          </div>
       </div>
     </div>
     <div id="id03" class="modal">
@@ -87,27 +87,27 @@
         <span onclick="document.getElementById('id03').style.display='none'" class="close">&times;</span>
           <div class="imgstar">
             <img id="myImg" src="../../img/inner/xue.jpg" alt="flood" style="width:90%; height:90%;">
-          </div> 
+          </div>
       </div>
     </div>
     <!-- 洪水的例子，分别为中国和日本 -->
     <div id="title">
         <fieldset class="layui-elem-field layui-field-title">
-            <legend><h3>日本と中国の例</h3></legend>
+            <legend><h3>日本と中国の事例</h3></legend>
         </fieldset>
     </div>
     <!-- 中国与日本例子的入口，面板 -->
     <div style="padding: 20px; background-color: #F2F2F2; width: 90%; margin: 0 auto; text-align: center;">
   <div class="layui-row layui-col-space15">
       <div class="layui-card">
-        <div class="layui-card-header"><h2>茨城県・鬼怒川</h2></div>
+        <div class="layui-card-header"><h2>鬼怒川</h2></div>
         <div class="layui-card-body">
-          <p><br>鬼怒川は、関東平野東部を北から南へと流れ利根川に合流する一級河川である。全長176.7kmで、利根川の支流の中で最も長い。2015年関東・東北豪雨では，一級河川である鬼怒川の堤防が決壊し，鬼怒川と小貝川に挟まれた平地部の約40km<sup>2</sup>にわたって大規模な浸水被害が生じた。消防庁による被害まとめによると、20人の死者が確認されている。また、全国で負傷者82人、住宅の全壊81棟、半壊7,090棟、一部破損384棟、非住家被害1,722棟となっている。<br>
+          <p><br>鬼怒川は、木戸沼を源流とする利根川の支流である。全長176.7kmと利根川の支流としては最長となる。2015年に発生した関東・東北豪雨では、xxx付近で、鬼怒川の堤防が決壊し、鬼怒川と小貝川に挟まれた平地部の約40km<sup>2</sup>にわたって大規模な浸水被害が生じた（reference）。関東・東北豪雨によって、死者20人、負傷者82人、住宅の全壊81棟、半壊7,090棟、一部破損384棟、非住家被害1,722（消防庁xxx）。<br>
           <br></p>
           <div><a class="layui-btn layui-btn-radius openJapan_btn" target="_blank">地図を見る</a></div><br>
           <!--  <a href="https://scarlett0507.github.io/0817map/">-->
           <img border="0" width="86%" src="../../img/kinu.jpg"/>
-          <v><br>鬼怒川からあふれた水で冠水した国道で立ち往生した車の屋根から消防のボートで救助された人たち © 日中新聞</v>
+          <v><br>鬼怒川の決壊の様子（出典: 国土地理院 xxx）</v>
         </div>
       </div>
     </div>
@@ -137,7 +137,7 @@
                 parent.tab.tabAdd($(this));
             })
         })
-    </script>   
+    </script>
     <script type="text/javascript" src="../../js/map.js"></script>
 </body>
 </html>
