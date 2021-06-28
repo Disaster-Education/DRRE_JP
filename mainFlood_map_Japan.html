@@ -93,7 +93,8 @@ require([
     const DID = new KMLLayer({
     url:"https://scarlett0507.github.io/guiflood/DID.kmz",
     id:"DID",
-    visible: false
+    visible: false,
+　　copyright:"国土数値情報（DID人口集中地区（ポリゴン））を加工し作成"
   });
    const landslide = new KMLLayer({
         url:"https://scarlett0507.github.io/guiflood/landslide.kmz",
@@ -187,25 +188,25 @@ require([
 </head>
 
 <body>
-  <div id="viewDiv" ><button id="toggle" type="button" class="my_button">Legend</button></div>
+  <div id="viewDiv" ><button id="toggle" type="button" class="my_button">凡例</button></div>
   <div class="container">
     <div class="layerToggle">
-      <div id="title"><br>Base map</div>
+      <div id="title"><br>背景地図</div>
       <div class="content">
-        <p><input type="checkbox" id="gsipaleLyr" /> White Map<br>
-        <input type="checkbox" id="gsipaleLyr2" /> DEM Map<br>
-        <input type="checkbox" id="gsipaleLyr3" /> Images<br>
-        <input type="checkbox" id="gsipaleLyr4" /> Old Map<v>（1974-1978）</v><br></p>
+        <p><input type="checkbox" id="gsipaleLyr" /> 地理院地図<br>
+        <input type="checkbox" id="gsipaleLyr2" /> 標高地図<br>
+        <input type="checkbox" id="gsipaleLyr3" /> 写真<br>
+        <input type="checkbox" id="gsipaleLyr4" /> 国土画像情報<v>（1974-1978年）</v><br></p>
       </div>
-      <div id="title"><br>Layer</div>
+      <div id="title"><br>レイヤ</div>
       <div class="content">
-        <p><input type="checkbox" id="shelter"/> Shelter<br>
-        <p><input type="checkbox" id="DID" /> DID<br>
-        <p><input type="checkbox" id="landslide" /> Landslide<br>
-        <p><input type="checkbox" id="flood" checked /> Assumed Waterlogging Area<br>
+        <p><input type="checkbox" id="shelter"/> 一次避難所<br>
+        <p><input type="checkbox" id="DID" /> 人口集中地区<br>
+        <p><input type="checkbox" id="landslide" /> 地滑り<br>
+        <p><input type="checkbox" id="flood" checked /> 想定浸水区域<br>
         <div style="width:200px; height:150px; margin:0 auto;">
 	    <img src="img/legend/kinu_legend.png"><br></div>
-	    <p style="text-align: center; font-size:10px;"><a href="https://github.com/yamauchi-inochu/arcgis_api">About this map</a></p>
+	    <p style="text-align: center; font-size:10px;"><a href="https://github.com/yamauchi-inochu/arcgis_api">この地図について</a></p>
       </div>
      </div>
    </div>
