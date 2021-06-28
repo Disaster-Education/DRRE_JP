@@ -9,7 +9,7 @@ layui.use(['form','layer','laydate','table','laytpl'],function(){
     //打开日本地图
     function openJapan(edit){
         var index = layui.layer.open({
-            title : "Disaster case",
+            title : "電子ハザードマップ",
             type : 2,
             content : "mainFlood_map_Japan.html",
             success : function(layero, index){
